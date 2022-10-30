@@ -10,6 +10,7 @@
     <!-- Bootstrap overrides -->
     <style>
         .h2, h2 {
+            font-family: 'SimHei';
             font-size: 2rem;
             padding-top: 4rem;
             margin-top: -2rem;
@@ -28,50 +29,43 @@
         }
     </style>
 
-    <!-- Fork me on GitHub -->
-    <link rel="stylesheet" href="css/gh-fork-ribbon.min.css" />
-    <style>
-        .github-fork-ribbon.right-bottom:before {
-            background-color: #333;
-        }
-    </style>
-
     <title>DMatrix</title>
 
 </head>
 
 <body>
 
-<h2 class="topmargin">DMatrix: 图流数据快速统计</h2>
-
-本网站展示了我们的论文“<i>DMatrix: Toward fast and accurate queries in graph stream</i>”的部分数据，该论文发表于“<i>Computer Networks</i>”。
+<h2 class="topmargin">DMatrix: 网络流量图流测量</h2>
 
 <h2>流量测量工具</h2>
-
-本工具是基于DMatrix构建的流量测量工具，用于应用流量的统计、查询和分析。
-
+DMatrix可进行图流大小以及更细粒度的网络流量测量。
+<ul>
+    <li><a href = "https://github.com/houchangsheng/DMatrix">Dmatrix</a></li>
+</ul>
+DMatrix框架示意图。
 <p>
-<img src="framework.png" width="1200" height="357" alt="traffic  measurement tool"/>
+<img src="framework.png" width="800" height="400" alt="framework"/>
 </p>
 
-<h2>Top应用和Top用户</h2>
+<h2>某大学校园网应用流量和用户流量分析</h2>
 
-该流量测量工具可以获取特定时间窗口内的top应用和top应用，下图给出统计数据。
-
+用网高峰时段主要应用流量。
 <p>
-<img src="top apps.png" width="1000" height="500" alt="top applications"/>
+<img src="top apps.png" width="800" height="400" alt="top applications"/>
+</p>
+用网高峰时段大流量用户。
+<p>
+<img src="top sources.png" width="800" height="400" alt="top sources"/>
 </p>
 
+<h2>大流量用户的主要应用流量</h2>
+
+大流量用户的主要应用以及占比。
 <p>
-<img src="top sources.png" width="1000" height="500" alt="top sources"/>
+<img src="top apps of top users.png" width="500" height="400" alt="top applications of top sources"/>
 </p>
-
-<h2>Top用户偏好的Top应用</h2>
-
-该流量测量工具可以分析top用户使用的top应用。左表给出了这些top应用、相应的流量以及占比。右表分析了占比较重的HTTPS/HTTP流量的可能访问目标。
-
+HTTPS/HTTP流量的主要去向。
 <p>
-<img src="top apps of top users.png" width="458" height="400" alt="top applications of top sources"/>
 <img src="destination of HTTP traffic.png" width="446" height="400" alt="destination of HTTPS/HTTP traffic"/>
 </p>
 
